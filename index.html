@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icono -->
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAdVBMVEUAAAD///8qKioICAgODg6bm5u3t7egoKC8vLxUVFQgICCFhYXv7+9HR0doaGgvLy/4+Pjf39/t7e1BQUEUFBRnZ2fY2NiDg4PR0dHl5eVycnKNjY3Dw8N7e3vOzs6pqalcXFw3NzchISGVlZV2dnZYWFiMjIzZzG6dAAAEpElEQVR4nO3d63aiQBCFUVoTr/Gu0ThONGPM+z/iqBGEOtUoa1ngos/3M7YM2SMGCd2J5k2W7SV6iVi2Jk0gmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgZZr0sj3tf0YpJo11azV2SpPOz8z+ny9aCSbrlcZxdfljvQNFMzcZTnNFzu1td6Fo1iab2yKn18rIdCcKZmvS+LiL5Nju1qbmTcP9zGZq0rzjuInr3tjWrccfmKnJ5H4S5/IPn0WJR5elyWsREveevy2zvcQMTRqFSJxb5mxrv7PaSyVDk1ZBkzf/pub5L6IHZ2fSK0ji3F/vtjb+hwyyM/lb2OTTt6nZ2Ggf9exMPrXD45r2+Wfu2dSkbbSPenYmb/AyGH5d/61m47AFk4O+pbX7Z7SPemYm8HbyDUPm8pTO83J469jsoi8zk674frfKmIEY01K3tHcDm130ZWayFN9vQxskriKstDG9G2dzj8/MRJzETtRB++ygD21MRznqbDMzad/xEji+e2bSztq6eedyNpVlor9NDrODtNOQiSvzo865ak0WN02Ob0vlXTi59OyvkzfPDyPLntzkeF5X8g/i6NlNRrcuq5j03CbHz0xDm93Lq1qTQ3aQPD/ZOTe12bvcqjWJstf15W+/PrwfgUyr2GS+bL9ear/uxIM/x+eVfnISVW6S13xME9n5ei5N0s0cTWQrmsgupy40STWliSy+JEWTpOQKN02SNjSRXS/60yRuQhNZ6lfNNLk0pkneU2lybuRoIvukiWznaCL7oInsx9FE1qJJY5D0O5OHJi0YE7zJLDPmfCtT8CZD/PZpkhpxuR2JJqkR698v0eQ6IL6ngibXAfGcWpokjyd3aAVkos+5SO4FHSd7EZCJfgtWP374eudJnU3EZ7mxOg8l/pVF6galOpuIW1/1SVzxhdfF9Ut1NhkJk7EyCSF+maTfbOpsEjmJ0hcDusmsjK/UV2tt8i5RnJtsOnGb1OIfmak9tTa5e8Z19q7YWpvMdAEs++5baxPt4NESs53qbbLTDWRiwYp6m6gzjKGNeFLNTXrqulKinnhSzU3uOXrgfvq6m8i5KBjOf6y9SdS9cfis4Rn1NzlND85JmWEbgkk0yFmOTJnrF4TJseVmqh5D2pTQUEyOjbqL72U/1bKjX2cKyASbwFS3cyGbdD3TH0M2+XQ79evCZHroerPatapMRr4VpQqsYKYuDfKAqjLZZi44piqyqpvRyrNVmahrCZ0qYmI0+bgik77zPRKuyVRexE8K1mThf3sM1mS18z4UqsmXvOCYKlSTrefn8KlATRp5a7cHajKU16XThWnykrtqVJFFrI1W2q3AJH+l+uZ9fyXglNVyofxbMxhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYM2o9D83/vQ1o1GDZRv9B/vyNA4BFrSRAAAAAElFTkSuQmCC">
+
+    <title>La Web del Mañana (Encuesta)</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+            <img src="images/Logo.png" alt="Logo" class="navbar__logo">
+            <p class="navbar__name">Cesar Laviery</p>
+        </nav>
+
+        <div class="header">
+            <h1 class="header__title">La Web del Mañana. ¿Qué Nos Espera?</h1>
+            <p class="header__paragraph">Comparte tu opinión en esta breve encuesta y ayúdanos a construir un
+                futuro web más
+                brillante.</p>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <form action="#" class="survey">
+
+            <div class="personal-information">
+                <label class="data">
+                    Nombre
+                    <input type="text" name="name" placeholder="Ingrese su nombre" class="data__ingrese" required>
+                </label>
+                <label class="data">
+                    Apellido
+                    <input type="text" name="last-name" placeholder="Ingrese su apellido" class="data__ingrese"
+                        required>
+                </label>
+                <label class="data">
+                    Edad
+                    <input type="number" name="age" placeholder="18" min="18" max="80" class="data__ingrese" required>
+                </label>
+                <label class="data">
+                    Correo
+                    <input type="email" name="email" placeholder="Ingrese su correo" class="data__ingrese" required>
+                </label>
+            </div>
+
+            <div class="question">
+                <label for="future-technologies" class="question__title">¿Qué tecnologías crees que tendrán el mayor
+                    impacto en el
+                    desarrollo
+                    web en los próximos 5
+                    años?</label>
+                <select name="future-technologies" id="future-technologies" class="question__select" required>
+                    <option value="artificial-intelligence">Inteligencia artificial (IA)</option>
+                    <option value="augmented-reality">Realidad aumentada (AR)</option>
+                    <option value="virtual-reality">Realidad virtual (VR)</option>
+                    <option value="blockchain">Blockchain</option>
+                    <option value="internet-things">Internet de las cosas (IoT)</option>
+                    <option value="others">Otros</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="question__title">¿Cuáles crees que son los mayores desafíos que enfrenta el desarrollo web
+                    en el futuro?</p>
+                <label class="question__option">
+                    <input type="radio" name="biggest-challenges" value="security" class="question__radio-option">
+                    Seguridad
+                </label>
+                <label class="question__option">
+                    <input type="radio" name="biggest-challenges" value="privacy" class="question__radio-option">
+                    Privacidad
+                </label>
+                <label class="question__option">
+                    <input type="radio" name="biggest-challenges" value="scalability" class="question__radio-option">
+                    Escalabilidad
+                </label>
+                <label class="question__option">
+                    <input type="radio" name="biggest-challenges" value="accessibility" class="question__radio-option">
+                    Accesibilidad
+                </label>
+                <label class="question__option">
+                    <input type="radio" name="biggest-challenges" value="maintenance" class="question__radio-option">
+                    Mantenimiento
+                </label>
+                <label class="question__option">
+                    <input type="radio" name="biggest-challenges" value="others" class="question__radio-option" checked>
+                    Otros
+                </label>
+            </div>
+
+            <div class="question">
+                <p class="question__title">¿Qué lenguajes de programación crees que serán más utilizados para el
+                    desarrollo web en el futuro?
+                </p>
+                <label class="question__option">
+                    <input type="checkbox" name="programming-languages" value="javascript"
+                        class="question__checkbox-option">
+                    JavaScript
+                </label>
+                <label class="question__option">
+                    <input type="checkbox" name="programming-languages" value="phython"
+                        class="question__checkbox-option">
+                    Python
+                </label>
+                <label class="question__option">
+                    <input type="checkbox" name="programming-languages" value="java" class="question__checkbox-option">
+                    Java
+                </label>
+                <label class="question__option">
+                    <input type="checkbox" name="programming-languages" value="c#" class="question__checkbox-option">
+                    C#
+                </label>
+                <label class="question__option">
+                    <input type="checkbox" name="programming-languages" value="php" class="question__checkbox-option">
+                    PHP
+                </label>
+                <label class="question__option">
+                    <input type="checkbox" name="programming-languages" value="others" class="question__checkbox-option"
+                        checked>
+                    Otros
+                </label>
+            </div>
+
+            <div class="question">
+                <p class="question__title">¿Cómo crees que la web del mañana cambiará la forma en que vivimos, trabajamos y nos relacionamos?</p>
+                <textarea name="web-tomorrow" class="question__comment" placeholder="Esperamos su respuesta..."></textarea>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="button">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
