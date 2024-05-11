@@ -14,6 +14,9 @@
     --body-background-color: #061b37;
     --font-color: #ecf3fd;
     --button-color: #6a9ef0;
+    --Red: #ff0000;
+    --Green: #08f700;
+    --Blue: #0077ff;
 }
 
 body {
@@ -95,10 +98,18 @@ body {
     }
 }
 
+/* Section Personal Information */
+
 .personal-information {
     display: inherit;
     flex-direction: inherit;
     gap: 10px;
+}
+
+.data-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .data {
@@ -109,14 +120,64 @@ body {
 }
 
 .data__ingrese {
+    position: relative;
+}
+
+.data__input {
+    width: 100%;
     padding: 5px;
     border-radius: 5px;
     font-family: inherit;
+    transition: .5s;
 
     &:focus {
-        outline: 1px solid var(--font-color);
+        outline: none;
+        border: 2px solid var(--Blue);
     }
 }
+
+.data__icon {
+    position: absolute;
+    right: 1%;
+    top: 25%;
+    opacity: 0;
+}
+
+.correct-group .data__icon {
+    color: var(--Green);
+    opacity: 1;
+}
+
+.data__text {
+    display: none;
+}
+
+.wrong-group {
+    .data {
+        color: var(--Red);
+    }
+
+    .data__input {
+        border: 2px solid var(--Red);
+    }
+
+    .data__input:focus {
+        border: 2px solid var(--Red);
+    }
+
+    .data__icon {
+        color: var(--Red);
+        opacity: 1;
+    }
+
+    .data__text {
+        font-size: 12px;
+        display: inline;
+        border-radius: 5px;
+    }
+}
+
+/* Section Quietions  */
 
 .question {
     display: inherit;
@@ -146,6 +207,17 @@ body {
     &:focus {
         outline: 1px solid var(--font-color);
     }
+}
+
+.error-message {
+    color: var(--Red);
+    text-align: center;
+    font-size: .9rem;
+    display: none;
+}
+
+.wrong-validation {
+    display: block;
 }
 
 .button {
@@ -184,6 +256,17 @@ body {
         left: 0;
         width: 100%;
     }
+}
+
+.successful-message {
+    padding-top: 10px;
+    text-align: center;
+    font-size: .9rem;
+    display: none;
+}
+
+.successful-validation {
+    display: block;
 }
 
 @media (min-width:768px) {

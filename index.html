@@ -7,9 +7,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- JS -->
+    <script defer src="script.js"></script>
+
     <!-- Icono -->
     <link rel="icon" type="image/png"
         href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAdVBMVEUAAAD///8qKioICAgODg6bm5u3t7egoKC8vLxUVFQgICCFhYXv7+9HR0doaGgvLy/4+Pjf39/t7e1BQUEUFBRnZ2fY2NiDg4PR0dHl5eVycnKNjY3Dw8N7e3vOzs6pqalcXFw3NzchISGVlZV2dnZYWFiMjIzZzG6dAAAEpElEQVR4nO3d63aiQBCFUVoTr/Gu0ThONGPM+z/iqBGEOtUoa1ngos/3M7YM2SMGCd2J5k2W7SV6iVi2Jk0gmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgZZr0sj3tf0YpJo11azV2SpPOz8z+ny9aCSbrlcZxdfljvQNFMzcZTnNFzu1td6Fo1iab2yKn18rIdCcKZmvS+LiL5Nju1qbmTcP9zGZq0rzjuInr3tjWrccfmKnJ5H4S5/IPn0WJR5elyWsREveevy2zvcQMTRqFSJxb5mxrv7PaSyVDk1ZBkzf/pub5L6IHZ2fSK0ji3F/vtjb+hwyyM/lb2OTTt6nZ2Ggf9exMPrXD45r2+Wfu2dSkbbSPenYmb/AyGH5d/61m47AFk4O+pbX7Z7SPemYm8HbyDUPm8pTO83J469jsoi8zk674frfKmIEY01K3tHcDm130ZWayFN9vQxskriKstDG9G2dzj8/MRJzETtRB++ygD21MRznqbDMzad/xEji+e2bSztq6eedyNpVlor9NDrODtNOQiSvzo865ak0WN02Ob0vlXTi59OyvkzfPDyPLntzkeF5X8g/i6NlNRrcuq5j03CbHz0xDm93Lq1qTQ3aQPD/ZOTe12bvcqjWJstf15W+/PrwfgUyr2GS+bL9ear/uxIM/x+eVfnISVW6S13xME9n5ei5N0s0cTWQrmsgupy40STWliSy+JEWTpOQKN02SNjSRXS/60yRuQhNZ6lfNNLk0pkneU2lybuRoIvukiWznaCL7oInsx9FE1qJJY5D0O5OHJi0YE7zJLDPmfCtT8CZD/PZpkhpxuR2JJqkR698v0eQ6IL6ngibXAfGcWpokjyd3aAVkos+5SO4FHSd7EZCJfgtWP374eudJnU3EZ7mxOg8l/pVF6galOpuIW1/1SVzxhdfF9Ut1NhkJk7EyCSF+maTfbOpsEjmJ0hcDusmsjK/UV2tt8i5RnJtsOnGb1OIfmak9tTa5e8Z19q7YWpvMdAEs++5baxPt4NESs53qbbLTDWRiwYp6m6gzjKGNeFLNTXrqulKinnhSzU3uOXrgfvq6m8i5KBjOf6y9SdS9cfis4Rn1NzlND85JmWEbgkk0yFmOTJnrF4TJseVmqh5D2pTQUEyOjbqL72U/1bKjX2cKyASbwFS3cyGbdD3TH0M2+XQ79evCZHroerPatapMRr4VpQqsYKYuDfKAqjLZZi44piqyqpvRyrNVmahrCZ0qYmI0+bgik77zPRKuyVRexE8K1mThf3sM1mS18z4UqsmXvOCYKlSTrefn8KlATRp5a7cHajKU16XThWnykrtqVJFFrI1W2q3AJH+l+uZ9fyXglNVyofxbMxhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYM2o9D83/vQ1o1GDZRv9B/vyNA4BFrSRAAAAAElFTkSuQmCC">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9fe5c1ddcf.js" crossorigin="anonymous"></script>
 
     <title>La Web del Mañana (Encuesta)</title>
 </head>
@@ -36,25 +42,60 @@
 
         <form action="#" class="survey">
 
+            <!-- Section Personal Information -->
+
             <div class="personal-information">
-                <label class="data">
-                    Nombre
-                    <input type="text" name="name" placeholder="Ingrese su nombre" class="data__ingrese" required>
-                </label>
-                <label class="data">
-                    Apellido
-                    <input type="text" name="last-name" placeholder="Ingrese su apellido" class="data__ingrese"
-                        required>
-                </label>
-                <label class="data">
-                    Edad
-                    <input type="number" name="age" placeholder="18" min="18" max="80" class="data__ingrese" required>
-                </label>
-                <label class="data">
-                    Correo
-                    <input type="email" name="email" placeholder="Ingrese su correo" class="data__ingrese" required>
-                </label>
+                <div class="data-group group__name">
+                    <label class="data">
+                        <p class="data__title"><strong>Nombre</strong> (Obligatorio)</p>
+                        <div class="data__ingrese">
+                            <input type="text" name="name" placeholder="Ingrese su nombre" class="data__input" required>
+                            <i class="fa-regular fa-circle-xmark data__icon"></i>
+                        </div>
+                        <p class="data__text"><strong>Error:</strong> El nombre ingresado no es válido. Revise el
+                            formato y vuelva a intentarlo.</p>
+                    </label>
+                </div>
+                <div class="data-group group__last-name">
+                    <label class="data">
+                        <p class="data__title"><strong>Apellido</strong> (Obligatorio)</p>
+                        <div class="data__ingrese">
+                            <input type="text" name="last-name" placeholder="Ingrese su apellido" class="data__input"
+                                required>
+                            <i class="fa-regular fa-circle-xmark data__icon"></i>
+                        </div>
+                        <p class="data__text"><strong>Error:</strong> El nombre ingresado no es válido. Revise
+                            el formato y vuelva a intentarlo.</p>
+                    </label>
+                </div>
+                <div class="data-group group__age">
+                    <label class="data">
+                        <p class="data__title"><strong>Edad</strong> (Obligatorio)</p>
+                        <div class="data__ingrese">
+                            <input type="text" name="age" placeholder="Ingrese su edad" class="data__input" required>
+                            <i class="fa-regular fa-circle-xmark data__icon"></i>
+                        </div>
+                        <p class="data__text"><strong>Error:</strong> La edad ingresada no está dentro del
+                            rango válido (18 a 90 años). Por favor, ingrese una edad dentro de este rango.</p>
+                    </label>
+                </div>
+                <div class="data-group group__email">
+                    <label class="data">
+                        <p class="data__title"><strong>Correo</strong> (Obligatorio)</p>
+                        <div class="data__ingrese">
+                            <input type="email" name="email" placeholder="Ingrese su correo" class="data__input"
+                                required>
+                            <i class="fa-regular fa-circle-xmark data__icon"></i>
+                        </div>
+                        <p class="data__text"><strong>Error:</strong> No se encontró una dirección de correo electrónico
+                            válida.
+                            Asegúrese de que la dirección de correo electrónico siga el formato correcto (nombre de
+                            usuario@dominio.tld).</p>
+                    </label>
+                </div>
             </div>
+
+            <!-- Section Quietions -->
 
             <div class="question">
                 <label for="future-technologies" class="question__title">¿Qué tecnologías crees que tendrán el mayor
@@ -135,12 +176,15 @@
             </div>
 
             <div class="question">
-                <p class="question__title">¿Cómo crees que la web del mañana cambiará la forma en que vivimos, trabajamos y nos relacionamos?</p>
-                <textarea name="web-tomorrow" class="question__comment" placeholder="Esperamos su respuesta..."></textarea>
+                <p class="question__title">¿Cómo crees que la web del mañana cambiará la forma en que vivimos,
+                    trabajamos y nos relacionamos?</p>
+                <textarea name="web-tomorrow" class="question__comment"
+                    placeholder="Esperamos su respuesta..."></textarea>
             </div>
 
             <div class="button-container">
                 <button type="submit" class="button">Enviar</button>
+                <p class="successful-message">¡Formulario enviado exitosamente!</p>
             </div>
         </form>
     </main>
