@@ -112,6 +112,14 @@ body {
     gap: 8px;
 }
 
+.data__title {
+    font-size: .8rem;
+}
+
+.data__title strong{
+    font-size: .9rem;
+}
+
 .data {
     display: inherit;
     flex-direction: inherit;
